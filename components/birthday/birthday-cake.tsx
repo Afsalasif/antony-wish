@@ -138,11 +138,11 @@ export function BirthdayCake() {
     <div className="relative flex flex-col items-center justify-start h-full w-full max-w-lg mx-auto p-4 select-none">
       {/* Header Info */}
       <div className="mb-4 text-center mt-2 z-10">
-        <h2 className="font-heading text-2xl font-bold text-foreground text-glow flex items-center justify-center gap-1.5">
+        <h2 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold text-foreground text-glow flex items-center justify-center gap-1.5">
           <Star className="size-5 text-amber-400 fill-amber-400/20" />
           Make a Birthday Wish
         </h2>
-        <p className="text-xs text-foreground/60 mt-1 max-w-[290px] mx-auto">
+        <p className="text-xs md:text-sm text-foreground/60 mt-1.5 max-w-[290px] md:max-w-md mx-auto">
           {blownOut 
             ? "Koche, the candle is blown! Let the music play." 
             : "Tap the candle flame directly to blow it out, or turn on the microphone and blow into it!"}
@@ -160,7 +160,7 @@ export function BirthdayCake() {
           </div>
         )}
 
-        <div className="relative flex flex-col items-center">
+        <div className="relative flex flex-col items-center md:scale-125 md:my-12 transition-transform duration-300">
           {/* Candle Flame & Wick */}
           <div className="relative z-20 flex flex-col items-center" style={{ transform: 'translateY(8px)' }}>
             <AnimatePresence mode="wait">
@@ -285,7 +285,7 @@ export function BirthdayCake() {
               initial={{ opacity: 0, scale: 0.9, y: 40 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 40 }}
-              className="relative z-10 w-full max-w-md bg-[#fefdfa] border-2 border-stone-200 p-6 md:p-8 rounded-2xl text-stone-900 font-serif shadow-2xl overflow-hidden max-h-[85vh] overflow-y-auto no-scrollbar"
+              className="relative z-10 w-full max-w-md md:max-w-lg bg-[#fefdfa] border-2 border-stone-200 p-6 md:p-8 rounded-2xl text-stone-900 font-serif shadow-2xl overflow-hidden max-h-[85vh] overflow-y-auto no-scrollbar"
             >
               {/* Paper border/filigree accent */}
               <div className="absolute inset-2 border border-stone-200/50 pointer-events-none rounded-xl" />
