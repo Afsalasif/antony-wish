@@ -171,44 +171,7 @@ export function playStardustChime(yRatio: number) {
 
 // 4. Play "Happy Birthday" melody (music box synth)
 export function playHappyBirthday() {
-  initAudio()
-  if (!ctx || isMelodyPlaying) return
-  
-  isMelodyPlaying = true
-  
-  // Pause the background song during the Happy Birthday performance
-  if (bgMusic) {
-    bgMusic.pause()
-  }
-  
-  if (master) {
-    master.gain.setValueAtTime(0.2, ctx.currentTime)
-  }
-
-  let scheduleTime = ctx.currentTime + 0.4
-  const beatDuration = 0.5 // 120 bpm
-  
-  HAPPY_BIRTHDAY_MELODY.forEach(([freq, duration, rest]) => {
-    if (!ctx) return
-    const durSeconds = duration * beatDuration
-    const restSeconds = rest * beatDuration
-    
-    playSynthNote(freq, scheduleTime, durSeconds * 1.8, 0.16, 'sine')
-    playSynthNote(freq * 2, scheduleTime + 0.01, durSeconds * 1.0, 0.06, 'sine')
-    
-    if (duration >= 1.0) {
-      playSynthNote(freq / 2, scheduleTime, durSeconds * 1.5, 0.04, 'triangle')
-    }
-    
-    scheduleTime += durSeconds + restSeconds
-  })
-  
-  const totalDurationMs = (scheduleTime - ctx.currentTime) * 1000
-  melodyTimer = window.setTimeout(() => {
-    isMelodyPlaying = false
-    // Resume the background song (if not muted)
-    startAmbientMusic()
-  }, totalDurationMs + 1200)
+  startAmbientMusic()
 }
 
 export function stopMelody() {

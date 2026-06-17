@@ -13,10 +13,20 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Happy Birthday, Koche! 🎂✨',
-  description: 'An interactive digital galaxy built just for your special day.',
+  title: 'Happy Birthday, my Koche! 🎂❤️',
+  description: "You are mine and I'm yours. Always. ❤️",
   generator: 'v0.app',
   applicationName: 'Birthday Galaxy',
+  openGraph: {
+    title: 'Happy Birthday, my Koche! 🎂❤️',
+    description: "You are mine and I'm yours. Always. ❤️",
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Happy Birthday, my Koche! 🎂❤️',
+    description: "You are mine and I'm yours. Always. ❤️",
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',

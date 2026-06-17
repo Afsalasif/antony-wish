@@ -47,14 +47,14 @@ export interface BirthdayConfig {
 export const CONFIG: BirthdayConfig = {
   recipientName: 'Koche',
   senderName: 'Afzal',
-  birthdayWishTitle: 'Happy Birthday, Koche! 🎂✨',
+  birthdayWishTitle: 'Happy Birthday, my Koche! 🎂❤️',
   introSubtitle: 'A little cosmic corner built just for you, to celebrate another beautiful year of your existence. Take your time exploring the stars.',
   
   letter: {
     salutation: 'Dearest Koche,',
     paragraphs: [
       'Happy Birthday, my love. 🎂❤️',
-      'I know things haven\'t been easy between us lately, and we may be facing challenges that neither of us expected. But today isn\'t about our problems—it\'s about celebrating you and the wonderful person you are.',
+      'I know things haven\'t been easy between us lately, and we may be facing challenges that neither of us expected. But today isn\'t about our problems, it\'s about celebrating you and the wonderful person you are.',
       'No matter where we stand right now, I am grateful for the memories we\'ve shared and the happiness you\'ve brought into my life. You deserve a day filled with peace, joy, and love, and I truly hope this year brings you strength, growth, and everything your heart wishes for.',
       'Thank you for being part of my journey. I care about you deeply, and on your special day, I wish you nothing but happiness and beautiful moments.',
       'Happy Birthday. May your year ahead be as beautiful as your smile. ❤️'

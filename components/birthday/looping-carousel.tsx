@@ -102,7 +102,7 @@ export function LoopingCarousel({ onComplete }: { onComplete: () => void }) {
       >
         <h1 className="font-heading text-4xl font-extrabold text-white text-glow tracking-tight flex items-center justify-center gap-2">
           <Sparkles className="size-6 text-amber-300 animate-pulse" />
-          Happy Birthday, Koche!
+          Happy Birthday, my Koche!
         </h1>
         <p className="text-sm text-white/75 mt-2 italic font-heading">
           Celebrating another beautiful year of your light.
