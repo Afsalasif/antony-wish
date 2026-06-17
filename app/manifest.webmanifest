@@ -1,0 +1,23 @@
+{
+  "name": "Will You Forgive Me?",
+  "short_name": "Forgive Me",
+  "description": "An interactive little universe built just to ask you one thing.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#2a0f1f",
+  "theme_color": "#2a0f1f",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
